@@ -37,7 +37,7 @@ func NewCore(lib string) (c Core, err error) {
 		return
 	}
 	version := mc.GetVersion()
-	if version == "5.0.0" {
+	if version == "5.0.0" || version == "5.1.0" {
 		c, err = core_5_0_0.NewCore(l)
 		return
 	}
